@@ -179,45 +179,38 @@
     <!-- Pricing Row -->
     <div class="w3-row-padding w3-center w3-padding-64" id="pricing">
         <h2>PRICING</h2>
-        <p>Choose a pricing plan that fits your needs.</p><br>
-		<form action="mailto:perspectiveaerialmedia@gmail.com" method="GET" enctype="text/plain">
-			<label><input name="subject" type="radio" value="golf-base"/>Premium</label>
-			<label><input name="subject" type="radio" value="golf-standard"/>Premium</label>
-			<label><input name="subject" type="radio" value="golf-pro"/>Premium</label>
-			<label><input name="subject" type="radio" value="golf-prem"/>Premium</label>
-			<textarea name="body"></textarea>
-			<input type="submit" value="Send" />
-		</form>
+        <p>Choose a pricing plan that fits your needs.</p>
+			
+		
 		<br>
         <div class="w3-quarter w3-margin-bottom">
           <ul class="w3-ul w3-border w3-hover-shadow">
-			<form enctype="text/plain" action="mailto:perspectiveaerialmedia@gmail.com" method="GET">
 				<li class="w3-theme">
 				  <p class="w3-xlarge">Golf</p>
 				</li>
-				<li class="w3-padding-16"><label><b>Base</b><input class="w3-left" name="body" type="radio" value="golf-base"/><br><span class="w3-opacity w3-small">&#10004 3 starting photographs<br>&#10004 single photo add-ons</span></label></li>
-				<li class="w3-padding-16"><label><b>Standard</b><input class="w3-left" name="body" type="radio" value="golf-std"/><br><span class="w3-opacity w3-small">&#10004 45 second aerial video of facilities</span>
+				<li class="w3-padding-16 w3-hover-teal golf" onclick="golf(0)"><b>Base</b><br><span class="w3-opacity w3-small">&#10004 3 starting photographs<br>&#10004 single photo add-ons</span></li>
+				<li class="w3-padding-16 w3-hover-teal golf" onclick="golf(1)"><b>Standard</b><br><span class="w3-opacity w3-small">&#10004 45 second aerial video of facilities</span>
 					  <br><span class="w3-opacity w3-small">&#10004 basic editing (transitions only)</span>
 					  <br><span class="w3-opacity w3-small">&#10004 single photo add-ons</span></li>
-				<li class="w3-padding-16"><label><b>Professional</b><input class="w3-left" name="body" type="radio" value="golf-pro"/><br><span class="w3-opacity w3-small">&#10004 1-2 minute aerial video of facilities
+				<li class="w3-padding-16 w3-hover-teal golf" onclick="golf(2)"><b>Professional</b><br><span class="w3-opacity w3-small">&#10004 1-2 minute aerial video of facilities
 					  <br>&#10004 professional editing (music and titles)
 					  <br>&#10004 3 aerial photographs
 					  <br>&#10004 single photo add-ons
-					  <br>&#10004 1-hole preview</span></label></li>
-				  <li class="w3-padding-16"><label><b>Premium</b><input class="w3-left" name="body" type="radio" value="golf-prem"/><br><span class="w3-opacity w3-small">&#10004 1-2 minute aerial video of facilities
+					  <br>&#10004 1-hole preview</span></li>
+				<li class="w3-padding-16 w3-hover-teal golf" onclick="golf(3)"><b>Premium</b><br><span class="w3-opacity w3-small">&#10004 1-2 minute aerial video of facilities
 					  <br>&#10004 professional editing (music and titles)
 					  <br>&#10004 4 aerial photos
 					  <br>&#10004 single photo add-ons
-					  <br>&#10004 3-hole preview</span></label></li>
-				<li class="w3-padding-16"><label><b>Hole Previews</b><input class="w3-left" name="body" type="radio" value="golf hole previews"/><br><span class="w3-opacity w3-small">&#10004 package options include 3, 9 or 18 holes
+					  <br>&#10004 3-hole preview</span></li>
+				<li class="w3-padding-16 w3-hover-teal golf" onclick="golf(4)"><b>Hole Previews</b><br><span class="w3-opacity w3-small">&#10004 package options include 3, 9 or 18 holes
 					  <br>&#10004 30 second aerial video (per hole)
-					  <br>&#10004 professional editing (music and titles)</span></label>
+					  <br>&#10004 professional editing (music and titles)</span>
 				</li>
 				<li class="w3-theme-l5 w3-padding-24">
-				  <button class="w3-button w3-teal w3-padding-large" name="subject" value="Golf_Inquiry">&#10004 Sign Up</button>
+				  <a id="golfbutton" href="mailto:perspectiveaerialmedia@gmail.com" class="mailbutton w3-button w3-teal w3-padding-large" >&#10004 Sign Up</a>
 				</li>
-			</form>
           </ul>
+		 
         </div>
 
         <div class="w3-quarter w3-margin-bottom">
@@ -225,15 +218,14 @@
             <li class="w3-theme-l2">
               <p class="w3-xlarge">Real Estate</p>
             </li>
-            <li class="w3-padding-16"><b>Base</b><br><span class="w3-opacity w3-small">&#10004 3 aerial photographs</span>
-                  <br><span class="w3-opacity w3-small">&#10004 single photo add-ons</span></li>
-            <li class="w3-padding-16"><b>Standard</b><br><span class="w3-opacity w3-small">&#10004 30 second aerial video of property</span>
+            <li class="w3-padding-16 w3-hover-teal estate" onclick="estate(0)"><b>Base</b><br><span class="w3-opacity w3-small">&#10004 3 aerial photographs<br>&#10004 single photo add-ons</span></li>
+            <li class="w3-padding-16 w3-hover-teal estate" onclick="estate(1)"><b>Standard</b><br><span class="w3-opacity w3-small">&#10004 30 second aerial video of property</span>
                   <br><span class="w3-opacity w3-small">&#10004 basic editing (transitions only)</span>
                   <br><span class="w3-opacity w3-small">&#10004 single photo add-ons</span></li>
-            <li class="w3-padding-16"><b>Professional</b><br><span class="w3-opacity w3-small">&#10004 30-60 second aerial video of property</span>
+            <li class="w3-padding-16 w3-hover-teal estate" onclick="estate(2)"><b>Professional</b><br><span class="w3-opacity w3-small">&#10004 30-60 second aerial video of property</span>
                   <br><span class="w3-opacity w3-small">&#10004 professional editing (music and titles)</span>
                   <br><span class="w3-opacity w3-small">&#10004 single photo add-ons</span><br><br><br></li>
-            <li class="w3-padding-16"><b>Premium</b><br><span class="w3-opacity w3-small">&#10004 1-2 minute aerial video of property</span>
+            <li class="w3-padding-16 w3-hover-teal estate" onclick="estate(3)"><b>Premium</b><br><span class="w3-opacity w3-small">&#10004 1-2 minute aerial video of property</span>
                   <br><span class="w3-opacity w3-small">&#10004 professional editing (music and titles)</span>
                   <br><span class="w3-opacity w3-small">&#10004 3 aerial photos</span>
                   <br><span class="w3-opacity w3-small">&#10004 single photo add-ons</span><br><br></li>
@@ -241,7 +233,7 @@
               <br><br><br><br>
             </li>
             <li class="w3-theme-l5 w3-padding-24">
-              <button class="w3-button w3-teal w3-padding-large">&#10004 Sign Up</button>
+              <a id="estatebutton" href="mailto:perspectiveaerialmedia@gmail.com" class="mailbutton w3-button w3-teal w3-padding-large" >&#10004 Sign Up</a>
             </li>
           </ul>
         </div>
@@ -251,15 +243,15 @@
             <li class="w3-theme-l4">
               <p class="w3-xlarge">Special Events</p>
             </li>
-            <li class="w3-padding-16"><b>Base</b><br><span class="w3-opacity w3-small">&#10004 3 aerial photographs</span>
+            <li class="w3-padding-16 w3-hover-teal event" onclick="specialevent(0)"><b>Base</b><br><span class="w3-opacity w3-small">&#10004 3 aerial photographs</span>
                   <br><span class="w3-opacity w3-small">&#10004 single photo add-ons</span></li>
-            <li class="w3-padding-16"><b>Standard</b><br><span class="w3-opacity w3-small">&#10004 30 second aerial video of property</span>
+            <li class="w3-padding-16 w3-hover-teal event" onclick="specialevent(1)"><b>Standard</b><br><span class="w3-opacity w3-small">&#10004 30 second aerial video of property</span>
                   <br><span class="w3-opacity w3-small">&#10004 basic editing (transitions only)</span>
                   <br><span class="w3-opacity w3-small">&#10004 single photo add-ons</span></li>
-            <li class="w3-padding-16"><b>Professional</b><br><span class="w3-opacity w3-small">&#10004 30-60 second aerial video of property</span>
+            <li class="w3-padding-16 w3-hover-teal event" onclick="specialevent(2)"><b>Professional</b><br><span class="w3-opacity w3-small">&#10004 30-60 second aerial video of property</span>
                   <br><span class="w3-opacity w3-small">&#10004 professional editing (music and titles)</span>
                   <br><span class="w3-opacity w3-small">&#10004 single photo add-ons</span><br><br><br></li>
-            <li class="w3-padding-16"><b>Premium</b><br><span class="w3-opacity w3-small">&#10004 1-2 minute aerial video of property</span>
+            <li class="w3-padding-16 w3-hover-teal event" onclick="specialevent(3)"><b>Premium</b><br><span class="w3-opacity w3-small">&#10004 1-2 minute aerial video of property</span>
                   <br><span class="w3-opacity w3-small">&#10004 professional editing (music and titles)</span>
                   <br><span class="w3-opacity w3-small">&#10004 3 aerial photos</span>
                   <br><span class="w3-opacity w3-small">&#10004 single photo add-ons</span><br><br></li>
@@ -267,7 +259,7 @@
               <br><br><br><br>
             </li>
             <li class="w3-theme-l5 w3-padding-24">
-              <button class="w3-button w3-teal w3-padding-large">&#10004 Sign Up</button>
+              <a id="eventbutton" href="mailto:perspectiveaerialmedia@gmail.com" class="mailbutton w3-button w3-teal w3-padding-large" >&#10004 Sign Up</a>
             </li>
           </ul>
         </div>
@@ -277,15 +269,15 @@
             <li id="newcolor">
               <p class="w3-xlarge">Other</p>
             </li>
-             <li class="w3-padding-16"><b>Base</b><br><span class="w3-opacity w3-small">√ 3 aerial photographs</span>
+             <li class="w3-padding-16 w3-hover-teal other" onclick="other(0)"><b>Base</b><br><span class="w3-opacity w3-small">√ 3 aerial photographs</span>
                   <br><span class="w3-opacity w3-small">&#10004 single photo add-ons</span></li>
-            <li class="w3-padding-16"><b>Standard</b><br><span class="w3-opacity w3-small">&#10004 30 second aerial video of property</span>
+            <li class="w3-padding-16 w3-hover-teal other" onclick="other(1)"><b>Standard</b><br><span class="w3-opacity w3-small">&#10004 30 second aerial video of property</span>
                   <br><span class="w3-opacity w3-small">&#10004 basic editing (transitions only)</span>
                   <br><span class="w3-opacity w3-small">&#10004 single photo add-ons</span></li>
-            <li class="w3-padding-16"><b>Professional</b><br><span class="w3-opacity w3-small">&#10004 30-60 second aerial video of property</span>
+            <li class="w3-padding-16 w3-hover-teal other" onclick="other(2)"><b>Professional</b><br><span class="w3-opacity w3-small">&#10004 30-60 second aerial video of property</span>
                   <br><span class="w3-opacity w3-small">&#10004 professional editing (music and titles)</span>
                   <br><span class="w3-opacity w3-small">&#10004 single photo add-ons</span><br><br><br></li>
-            <li class="w3-padding-16"><b>Premium</b><br><span class="w3-opacity w3-small">√ 1-2 minute aerial video of property</span>
+            <li class="w3-padding-16 w3-hover-teal other" onclick="other(3)"><b>Premium</b><br><span class="w3-opacity w3-small">√ 1-2 minute aerial video of property</span>
                   <br><span class="w3-opacity w3-small">&#10004 professional editing (music and titles)</span>
                   <br><span class="w3-opacity w3-small">&#10004 3 aerial photos</span>
                   <br><span class="w3-opacity w3-small">&#10004 single photo add-ons</span><br><br></li>
@@ -293,11 +285,12 @@
               <br><br><br><br>
             </li>
             <li class="w3-theme-l5 w3-padding-24">
-              <button class="w3-button w3-teal w3-padding-large">&#10004 Sign Up</button>
+              <a id="otherbutton" href="mailto:perspectiveaerialmedia@gmail.com" class="mailbutton w3-button w3-teal w3-padding-large" >&#10004 Sign Up</a>
             </li>
           </ul>
         </div>
     </div>
+	<script src="/scripts/email.js"></script>
 
     <!-- Contact Container -->
     <div class="w3-container w3-padding-64 w3-theme-l5" id="contact">
