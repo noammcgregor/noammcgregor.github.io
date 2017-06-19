@@ -1,7 +1,7 @@
 var packages = ["the%20base%20package.", "the%20standard%20package.", "the%20professional%20package.", "the%20premium%20package.", "the%20hole%20preview%20package."];
 
 function golf(n) {
-	clearAll();
+	//clearAll();
 	
 	var golfs = document.getElementsByClassName("golf");
 	var t1="mailto:perspectiveaerialmedia@gmail.com?subject=Golf%20Course%Aerial%20Media%20Inquiry&body=Hi,%0AI%20am%20interested%20in%20";
@@ -12,7 +12,7 @@ function golf(n) {
 }
 
 function estate(n) {
-	clearAll();
+	//clearAll();
 	
 	var estates = document.getElementsByClassName("estate");
 	var t1="mailto:perspectiveaerialmedia@gmail.com?subject=Golf%20Course%Aerial%20Media%20Inquiry&body=Hi,%0AI%20am%20interested%20in%20";
@@ -23,7 +23,7 @@ function estate(n) {
 }
 
 function specialevent(n) {
-	clearAll();
+	//clearAll();
 	
 	var events = document.getElementsByClassName("event");
 	var t1="mailto:perspectiveaerialmedia@gmail.com?subject=Golf%20Course%Aerial%20Media%20Inquiry&body=Hi,%0AI%20am%20interested%20in%20";
@@ -34,7 +34,7 @@ function specialevent(n) {
 }
 
 function other(n) {
-	clearAll();
+	//clearAll();
 	var others = document.getElementsByClassName("other");
 	var t1="mailto:perspectiveaerialmedia@gmail.com?subject=Other%Aerial%20Media%20Inquiry&body=Hi,%0AI%20am%20interested%20in%20";
 	t1+=packages[n];
