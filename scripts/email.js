@@ -8,7 +8,7 @@ function golf(n) {
 	t1+=packages[n];
 	document.getElementById("golfbutton").setAttribute("href", t1);
 	
-	golfs[n].className += " w3-teal";
+	golfs[n].className += " w3-teal w3-hover-teal";
 }
 
 function estate(n) {
@@ -19,7 +19,7 @@ function estate(n) {
 	t1+=packages[n];
 	document.getElementById("estatebutton").setAttribute("href", t1);
 	
-	estates[n].className += " w3-teal";
+	estates[n].className += " w3-teal w3-hover-teal";
 }
 
 function specialevent(n) {
@@ -30,7 +30,7 @@ function specialevent(n) {
 	t1+=packages[n];
 	document.getElementById("eventbutton").setAttribute("href", t1);
 	
-	events[n].className += " w3-teal";
+	events[n].className += " w3-teal w3-hover-teal";
 }
 
 function other(n) {
@@ -40,7 +40,7 @@ function other(n) {
 	t1+=packages[n];
 	document.getElementById("otherbutton").setAttribute("href", t1);
 	
-	others[n].className += " w3-teal";
+	others[n].className += " w3-teal w3-hover-teal";
 }
 
 function clearAll(){
@@ -56,9 +56,16 @@ function clearAll(){
 	
 	for (i = 0; i < estates.length; i++) {
 		golfs[i].className = golfs[i].className.replace(" w3-teal", "");
+		golfs[i].className = golfs[i].className.replace(" w3-hover-teal", "");
+		
 		estates[i].className = estates[i].className.replace(" w3-teal", "");
+		estates[i].className = estates[i].className.replace(" w3-hover-teal", "");
+		
 		events[i].className = events[i].className.replace(" w3-teal", "");
+		events[i].className = events[i].className.replace(" w3-hover-teal", "");
+		
 		others[i].className = others[i].className.replace(" w3-teal", "");
+		others[i].className = others[i].className.replace(" w3-hover-teal", "");
 	}
 	golfs[4].className = golfs[4].className.replace(" w3-teal", "");
 	
