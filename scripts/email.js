@@ -15,7 +15,7 @@ function estate(n) {
 	clearAll();
 	
 	var estates = document.getElementsByClassName("estate");
-	var t1="mailto:perspectiveaerialmedia@gmail.com?subject=Golf%20Course%Aerial%20Media%20Inquiry&body=Hi,%0AI%20am%20interested%20in%20";
+	var t1="mailto:perspectiveaerialmedia@gmail.com?subject=Real%20Estate%Aerial%20Media%20Inquiry&body=Hi,%0AI%20am%20interested%20in%20";
 	t1+=packages[n];
 	document.getElementById("estatebutton").setAttribute("href", t1);
 	
@@ -26,7 +26,7 @@ function specialevent(n) {
 	clearAll();
 	
 	var events = document.getElementsByClassName("event");
-	var t1="mailto:perspectiveaerialmedia@gmail.com?subject=Golf%20Course%Aerial%20Media%20Inquiry&body=Hi,%0AI%20am%20interested%20in%20";
+	var t1="mailto:perspectiveaerialmedia@gmail.com?subject=Special%20Event%Aerial%20Media%20Inquiry&body=Hi,%0AI%20am%20interested%20in%20";
 	t1+=packages[n];
 	document.getElementById("eventbutton").setAttribute("href", t1);
 	
