@@ -5,7 +5,7 @@ function golf(n) {
 	
 	var golfs = document.getElementsByClassName("golf");
 	var t1="mailto:perspectiveaerialmedia@gmail.com?subject=Golf%20Course%Aerial%20Media%20Inquiry&body=Hi,%0AI%20am%20interested%20in%20";
-	var t2="Here is my following information:%0%0First%20Name:%0%0Last%20Name:%0%0Filming%20Location:%0%0Required%20Completion%20Date:%0%0Additional%20Comments/Questions:%0%0%0***Thank%20you%20for%20your%20time.%20We%20will%20be%20in%20touch%20shortly%20with%20a%20quote%20and%20expected%20time%20Frame***
+	var t2="Here%20is%20my%20following%20information:%0%0First%20Name:%0%0Last%20Name:%0%0Filming%20Location:%0%0Required%20Completion%20Date:%0%0Additional%20Comments/Questions:%0%0%0***Thank%20you%20for%20your%20time.%20We%20will%20be%20in%20touch%20shortly%20with%20a%20quote%20and%20expected%20time%20Frame***";
 	t1+=packages[n];
 	document.getElementById("golfbutton").setAttribute("href", t1+t2);
 	
