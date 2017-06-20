@@ -15,7 +15,7 @@ function estate(n) {
 	clearAll();
 	
 	var estates = document.getElementsByClassName("estate");
-	var t1="mailto:perspectiveaerialmedia@gmail.com?subject=Real%20Estate%20Aerial%20Media%20Inquiry&body=Hi,%0AI%20am%20interested%20in%20";
+	var t1="mailto:perspectiveaerialmedia@gmail.com?subject=Real%20Estate%20Aerial%20Media%20Inquiry&body=Hi,%0A%0AI%20am%20interested%20in%20";
 	var t2="Here%20is%20my%20following%20information:%0A%0A%0AFirst%20Name:%0A%0ALast%20Name:%0A%0AFilming%20Location:%0A%0ARequired%20Completion%20Date:%0A%0AAdditional%20Comments/Questions:%0A%0A%0A***Thank%20you%20for%20your%20time.%20We%20will%20be%20in%20touch%20shortly%20with%20a%20quote%20and%20expected%20time%20Frame***";
 	t1+=packages[n];
 	document.getElementById("estatebutton").setAttribute("href", t1+t2);
@@ -27,7 +27,7 @@ function specialevent(n) {
 	clearAll();
 	
 	var events = document.getElementsByClassName("event");
-	var t1="mailto:perspectiveaerialmedia@gmail.com?subject=Special%20Event%20Aerial%20Media%20Inquiry&body=Hi,%0AI%20am%20interested%20in%20";
+	var t1="mailto:perspectiveaerialmedia@gmail.com?subject=Special%20Event%20Aerial%20Media%20Inquiry&body=Hi,%0A%0AI%20am%20interested%20in%20";
 	var t2="Here%20is%20my%20following%20information:%0A%0A%0AFirst%20Name:%0A%0ALast%20Name:%0A%0AFilming%20Location:%0A%0ARequired%20Completion%20Date:%0A%0AAdditional%20Comments/Questions:%0A%0A%0A***Thank%20you%20for%20your%20time.%20We%20will%20be%20in%20touch%20shortly%20with%20a%20quote%20and%20expected%20time%20Frame***";
 	t1+=packages[n];
 	document.getElementById("eventbutton").setAttribute("href", t1+t2);
@@ -38,7 +38,7 @@ function specialevent(n) {
 function other(n) {
 	clearAll();
 	var others = document.getElementsByClassName("other");
-	var t1="mailto:perspectiveaerialmedia@gmail.com?subject=Other%20Aerial%20Media%20Inquiry&body=Hi,%0AI%20am%20interested%20in%20";
+	var t1="mailto:perspectiveaerialmedia@gmail.com?subject=Other%20Aerial%20Media%20Inquiry&body=Hi,%0A%0AI%20am%20interested%20in%20";
 	var t2="Here%20is%20my%20following%20information:%0A%0A%0AFirst%20Name:%0A%0ALast%20Name:%0A%0AFilming%20Location:%0A%0ARequired%20Completion%20Date:%0A%0AAdditional%20Comments/Questions:%0A%0A%0A***Thank%20you%20for%20your%20time.%20We%20will%20be%20in%20touch%20shortly%20with%20a%20quote%20and%20expected%20time%20Frame***";
 	t1+=packages[n];
 	document.getElementById("otherbutton").setAttribute("href", t1+t2);
