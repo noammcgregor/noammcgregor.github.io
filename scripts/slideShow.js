@@ -6,7 +6,8 @@ function plusDivs(n) {
 }
 
 function autoSlide() {
-	showDivs(slideIndex +1);
+	slideIndex +=1;
+	showDivs(slideIndex);
 }
 
 function currentDiv(n) {
