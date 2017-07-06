@@ -1,11 +1,11 @@
 
-.mySlides {	display:none; border:2px solid #009688;}
+.mySlides {	display:none; }
 .w3-left, .w3-right, .w3-badge {cursor:pointer;}
 .w3-badge {height:18px;width:18px;padding:0;}
 .navitem {font-size:x-large;}
 .logobar {margin-bottom:10px; margin-left:70px;}
 
-
+#divslide {border:2px solid #009688;}
 #divteam {padding-left:50px;}
 #pteam {width:80%;}
 
