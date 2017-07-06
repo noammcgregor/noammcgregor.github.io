@@ -1,5 +1,6 @@
 var slideIndex = 1;
 showDivs(slideIndex);
+setInterval(autoSlide, 7000);
 
 function plusDivs(n) {
   showDivs(slideIndex += n);
@@ -28,5 +29,4 @@ function showDivs(n) {
   }
   x[slideIndex-1].style.display = "block";  
   dots[slideIndex-1].className += " w3-white";
-  setTimeout(autoSlide, 7000);
 }
