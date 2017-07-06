@@ -28,5 +28,5 @@ function showDivs(n) {
   }
   x[slideIndex-1].style.display = "block";  
   dots[slideIndex-1].className += " w3-white";
-  setTimeout(autoSlide, 2000);
+  setTimeout(autoSlide, 4500);
 }
